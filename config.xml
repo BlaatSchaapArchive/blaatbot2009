@@ -1,0 +1,17 @@
+<blaat>
+  <chat>
+    <host>irc.blaatschaap.be</host>
+    <ipv4>10.0.0.2</ipv4>
+    <ipv6></ipv6>
+    <port>6667</port>
+    <protocol>irc</protocol>
+    <nick>newbot</nick>
+    <user></user>
+    <password></password>
+    <realname></realname>
+    <client>bot</client>
+    <auth>testauth</auth>
+    <channel>#bscp-test</channel>
+    <module>test</module>
+  </chat>    
+</blaat>
