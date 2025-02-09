@@ -130,6 +130,7 @@ void cIRCProtocol::raw    (const char *raw){
 void * ReceiveThreadWrapper (void * C){
   cIRCProtocol *c = (cIRCProtocol*) C;
   c->ReceiveThread();
+  return NULL;
 }
 //------------------------------------------------------------------------------
 void cIRCProtocol::StartThread (){

@@ -54,7 +54,7 @@ int bm_reg(int p, void * proc) {
   default:
   printf("Unsupported!\n");
   }
-
+  return 0;
 }
 
 bool  channel_message  (const char* chan, const char* nick, const char* user, const char* host, const char* mess){

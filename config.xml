@@ -1,7 +1,7 @@
 <blaat>
   <chat>
     <host>irc.blaatschaap.be</host>
-    <ipv4>10.0.0.2</ipv4>
+    <ipv4></ipv4>
     <ipv6></ipv6>
     <port>6667</port>
     <protocol>irc</protocol>

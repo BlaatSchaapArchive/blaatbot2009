@@ -141,8 +141,9 @@ int bp_init (sConnectInfo *ConnectInfo){
   if (prot_init (ConnectInfo)) {
     Connection = new cConnection (ConnectInfo) ; 
     Connection->Connect();
+    return 0;
   } 
-
+  return -1;
 }
 
 //-----------------------------------------------------------------------------
@@ -263,17 +264,19 @@ int cConnection::Connect(){
 //  printf ("a Connection %p \n",Protocol->Connection);
 //  printf ("a ConnectInfo %p \n",Protocol->Connection->ConnectInfo);
 
-
-
+    return 0;
   }
+  return -1;
 }
 //-----------------------------------------------------------------------------
 int cConnection::Disconnect(){
   close(Socket);
+  return 0;
 }
 //-----------------------------------------------------------------------------
 int cConnection::Send(const char * data){
   send (Socket,data,strlen(data),0);
+  return 0;
 }
 //-----------------------------------------------------------------------------
 char * cConnection::ReceiveLn(){
@@ -320,6 +323,7 @@ char * cConnection::Receive0(){
       return temp;
     }
   }
+  return NULL;
 }
 //-----------------------------------------------------------------------------
 
