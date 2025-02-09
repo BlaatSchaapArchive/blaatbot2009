@@ -1,4 +1,4 @@
-TARGET=blaatbot2025
+TARGET=blaatbot2009
 PCDEV_ROOT=pcdev
 
 CXX_SRC 	+= main.cpp
